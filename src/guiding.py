@@ -1,10 +1,10 @@
 import logging
-from common.utils import Coord, function_name, CanonicalResponse, CanonicalResponse_Ok
-from common.paths import PathMaker
-from common.filer import Filer
-from common.mast_logging import init_log
-from common.activities import UnitActivities
-from common.utils import UnitRoi
+from MAST_common.utils import Coord, function_name, CanonicalResponse, CanonicalResponse_Ok
+from MAST_common.paths import PathMaker
+from MAST_common.filer import Filer
+from MAST_common.mast_logging import init_log
+from MAST_common.activities import UnitActivities
+from MAST_common.utils import UnitRoi
 from camera import CameraSettings, CameraBinning
 import astropy.units as u
 from astropy.coordinates import Angle

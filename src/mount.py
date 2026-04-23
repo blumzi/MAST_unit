@@ -6,17 +6,17 @@ import logging
 
 from PlaneWave import pwi4_client
 from typing import List
-from common.utils import Component, time_stamp, BASE_UNIT_PATH, OperatingMode
-from common.utils import RepeatTimer, CanonicalResponse, CanonicalResponse_Ok, function_name, caller_name
-from common.mast_logging import init_log
+from MAST_common.utils import Component, time_stamp, BASE_UNIT_PATH, OperatingMode
+from MAST_common.utils import RepeatTimer, CanonicalResponse, CanonicalResponse_Ok, function_name, caller_name
+from MAST_common.mast_logging import init_log
 from dlipower.dlipower.dlipower import SwitchedPowerDevice
-from common.config import Config
+from MAST_common.config import Config
 from fastapi.routing import APIRouter
 import math
 from astropy.coordinates import SkyCoord, frame_transform_graph, Angle
-from common.ascom import ascom_run, AscomDispatcher
-from common.activities import MountActivities
-from common.stopping import StoppingMonitor, MonitoredPosition
+from MAST_common.ascom import ascom_run, AscomDispatcher
+from MAST_common.activities import MountActivities
+from MAST_common.stopping import StoppingMonitor, MonitoredPosition
 
 logger = logging.getLogger('mast.unit.' + __name__)
 init_log(logger)

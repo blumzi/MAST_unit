@@ -4,8 +4,8 @@ from fastapi.openapi.utils import get_openapi
 import stage
 from mastapi import Mastapi
 from docstring_parser import parse, DocstringStyle
-from common.utils import Subsystem
-from common.mast_logging import init_log
+from MAST_common.utils import Subsystem
+from MAST_common.mast_logging import init_log
 from typing import Union
 import logging
 import socket

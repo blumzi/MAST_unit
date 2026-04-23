@@ -5,18 +5,18 @@ from enum import IntEnum, auto, Enum
 import datetime
 from typing import List, Union, Literal
 
-from common.utils import RepeatTimer, Component, time_stamp, CanonicalResponse, CanonicalResponse_Ok
-from common.utils import BASE_UNIT_PATH, function_name
-from common.config import Config
-from common.mast_logging import init_log
+from MAST_common.utils import RepeatTimer, Component, time_stamp, CanonicalResponse, CanonicalResponse_Ok
+from MAST_common.utils import BASE_UNIT_PATH, function_name
+from MAST_common.config import Config
+from MAST_common.mast_logging import init_log
 from dlipower.dlipower.dlipower import SwitchedPowerDevice
 import os
 import sys
 import platform
 from fastapi.routing import APIRouter
-from common.activities import StageActivities
-from common.stopping import StoppingMonitor
-from common.dlipowerswitch import SwitchedOutlet
+from MAST_common.activities import StageActivities
+from MAST_common.stopping import StoppingMonitor
+from MAST_common.dlipowerswitch import SwitchedOutlet
 
 cur_dir = os.path.abspath(os.path.dirname(__file__))                            # Specifies the current directory.
 ximc_dir = os.path.join(cur_dir, "Standa", "ximc-2.13.6", "ximc")               # dependencies for examples.

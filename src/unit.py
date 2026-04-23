@@ -15,17 +15,17 @@ from stage import Stage
 from mount import Mount
 from focuser import Focuser
 from dlipower.dlipower.dlipower import SwitchedPowerDevice, PowerSwitchFactory
-from common.utils import RepeatTimer
+from MAST_common.utils import RepeatTimer
 from threading import Thread
-from common.utils import Component, BASE_UNIT_PATH, UnitRoi
-from common.mast_logging import DailyFileHandler, init_log
-from common.utils import time_stamp, CanonicalResponse, CanonicalResponse_Ok, function_name, OperatingMode
-from common.filer import Filer
-from common.config import Config
-from common.activities import UnitActivities, FocuserActivities, CameraActivities
-from common.activities import CoverActivities, StageActivities, MountActivities
-from common.corrections import correction_phases
-from common.paths import PathMaker
+from MAST_common.utils import Component, BASE_UNIT_PATH, UnitRoi
+from MAST_common.mast_logging import DailyFileHandler, init_log
+from MAST_common.utils import time_stamp, CanonicalResponse, CanonicalResponse_Ok, function_name, OperatingMode
+from MAST_common.filer import Filer
+from MAST_common.config import Config
+from MAST_common.activities import UnitActivities, FocuserActivities, CameraActivities
+from MAST_common.activities import CoverActivities, StageActivities, MountActivities
+from MAST_common.corrections import correction_phases
+from MAST_common.paths import PathMaker
 from enum import Enum
 from fastapi.routing import APIRouter
 from PIL import Image

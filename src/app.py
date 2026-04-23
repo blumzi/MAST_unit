@@ -4,15 +4,15 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from PlaneWave import pwi4_client
-from common.mast_logging import init_log
+from MAST_common.mast_logging import init_log
 import logging
 from contextlib import asynccontextmanager
 import psutil
 import os
 from fastapi.responses import RedirectResponse, ORJSONResponse
 from fastapi.staticfiles import StaticFiles
-from common.process import ensure_process_is_running
-from common.config import Config
+from MAST_common.process import ensure_process_is_running
+from MAST_common.config import Config
 from fastapi import WebSocket, WebSocketDisconnect
 
 #

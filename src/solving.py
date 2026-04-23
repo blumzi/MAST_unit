@@ -1,18 +1,18 @@
 import math
 import os.path
 
-from common.utils import function_name, Coord
-from common.mast_logging import init_log
-from common.filer import Filer
-from common.extended_basemodel import ExtendedBaseModel
+from MAST_common.utils import function_name, Coord
+from MAST_common.mast_logging import init_log
+from MAST_common.filer import Filer
+from MAST_common.extended_basemodel import ExtendedBaseModel
 from acquisition import Acquisition
 import logging
 import time
 from typing import List, Literal, Optional
 from PlaneWave.ps3cli_client import PS3CLIClient
 from camera import CameraSettings
-from common.activities import UnitActivities
-from common.corrections import Corrections, Correction
+from MAST_common.activities import UnitActivities
+from MAST_common.corrections import Corrections, Correction
 from enum import IntFlag
 from astropy.coordinates import Angle
 import astropy.units as u

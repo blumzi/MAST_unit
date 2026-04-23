@@ -1,12 +1,12 @@
 import time
 import logging
-from common.utils import function_name, Coord
-from common.paths import PathMaker
-from common.mast_logging import init_log
-from common.activities import UnitActivities
-from common.utils import UnitRoi, CanonicalResponse
-from common.corrections import correction_phases
-from common.filer import Filer, FilerTop
+from MAST_common.utils import function_name, Coord
+from MAST_common.paths import PathMaker
+from MAST_common.mast_logging import init_log
+from MAST_common.activities import UnitActivities
+from MAST_common.utils import UnitRoi, CanonicalResponse
+from MAST_common.corrections import correction_phases
+from MAST_common.filer import Filer, FilerTop
 from stage import StagePresetPosition
 from camera import CameraSettings, CameraBinning
 from astropy.coordinates import Angle

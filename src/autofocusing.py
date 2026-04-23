@@ -1,10 +1,10 @@
 import datetime
 from threading import Thread
-from common.utils import function_name, CanonicalResponse_Ok
-from common.paths import PathMaker
-from common.mast_logging import init_log
-from common.filer import Filer
-from common.config import Config
+from MAST_common.utils import function_name, CanonicalResponse_Ok
+from MAST_common.paths import PathMaker
+from MAST_common.mast_logging import init_log
+from MAST_common.filer import Filer
+from MAST_common.config import Config
 import logging
 import time
 import os
@@ -12,9 +12,9 @@ from typing import List, Optional
 from PlaneWave.ps3cli_client import PS3CLIClient
 from camera import CameraSettings, CameraBinning
 from stage import StagePresetPosition
-from common.activities import UnitActivities, FocuserActivities
-from common.utils import UnitRoi
-from common.extended_basemodel import ExtendedBaseModel
+from MAST_common.activities import UnitActivities, FocuserActivities
+from MAST_common.utils import UnitRoi
+from MAST_common.extended_basemodel import ExtendedBaseModel
 from plotting import plot_autofocus_analysis
 import math
 

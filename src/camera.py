@@ -11,19 +11,19 @@ import logging
 from enum import IntFlag, auto, Enum
 from threading import Thread, Lock
 
-from common.utils import RepeatTimer, time_stamp, BASE_UNIT_PATH, OperatingMode
-from common.utils import Component, CanonicalResponse, CanonicalResponse_Ok, function_name
-from common.paths import PathMaker
-from common.config import Config
-from common.camera import CameraRoi, CameraBinning
-from common.mast_logging import init_log
+from MAST_common.utils import RepeatTimer, time_stamp, BASE_UNIT_PATH, OperatingMode
+from MAST_common.utils import Component, CanonicalResponse, CanonicalResponse_Ok, function_name
+from MAST_common.paths import PathMaker
+from MAST_common.config import Config
+from MAST_common.camera import CameraRoi, CameraBinning
+from MAST_common.mast_logging import init_log
 from dlipower.dlipower.dlipower import SwitchedPowerDevice
 
 from fastapi.routing import APIRouter
 from astropy.io import fits
 import numpy as np
-from common.ascom import ascom_run, AscomDispatcher
-from common.activities import CameraActivities
+from MAST_common.ascom import ascom_run, AscomDispatcher
+from MAST_common.activities import CameraActivities
 
 logger = logging.getLogger('mast.unit.' + __name__)
 init_log(logger)

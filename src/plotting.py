@@ -7,9 +7,9 @@ import matplotlib
 from matplotlib.patches import Patch
 import sys
 import os
-from common.mast_logging import init_log
-from common.utils import function_name, Filer
-from common.corrections import correction_phases, Corrections
+from MAST_common.mast_logging import init_log
+from MAST_common.utils import function_name, Filer
+from MAST_common.corrections import correction_phases, Corrections
 from typing import List, NamedTuple, Optional, Dict
 from astropy.coordinates import Angle
 import astropy.units as u
